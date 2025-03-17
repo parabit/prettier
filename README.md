@@ -1,4 +1,4 @@
-## prettier config 🚀
+# prettier config 🚀
 
 ### Install
 
@@ -10,11 +10,11 @@ npm i @parabit/prettier
 yarn add @parabit/prettier
 ```
 
-### peerDependencies
+### Peer dependencies
 
--  [prettier](https://www.npmjs.com/package/prettier)
+-  [prettier: "^3.5.0"](https://www.npmjs.com/package/prettier)
 
-### plugin recommendation for prettier
+### Plugins recommendation for prettier
 
 -  [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss)
 
@@ -34,4 +34,35 @@ yarn add @parabit/prettier
     "",
     "^[.]"
 ]
+```
+
+# Usage
+
+Without plugins `.prettierrc.js`
+
+```javascript
+const { prettier } = require('@parabit/prettier');
+
+/** @type {import('prettier').Config} */
+module.exports = prettier;
+```
+
+With plugins `.prettierrc.js`
+
+```javascript
+const { prettier } = require('@parabit/prettier');
+
+/** @type {import('prettier').Config} */
+module.exports = {
+	...prettier,
+	plugins: ['prettier-plugin-tailwindcss', '@ianvs/prettier-plugin-sort-imports'],
+	importOrder: [
+		'^react$',
+		'<THIRD_PARTY_MODULES>',
+		'',
+		'^@assets|@constants|@helpers|@hooks|@modules|@navigation|@services|@stores|@types|@ui$',
+		'',
+		'^[.]',
+	],
+};
 ```
