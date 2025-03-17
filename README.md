@@ -3,11 +3,11 @@
 ### Install
 
 ```bash
-npm i @parabit/prettier
+npm i --save-dev @parabit/prettier
 ```
 
 ```bash
-yarn add @parabit/prettier
+yarn add -D @parabit/prettier
 ```
 
 ### Peer dependencies
@@ -43,19 +43,17 @@ Alse see [prettier docs](https://prettier.io/docs/configuration).
 Without plugins `.prettierrc.js`
 
 ```javascript
-const { prettier } = require('@parabit/prettier');
+import { prettier } from '@parabit/prettier';
 
-/** @type {import('prettier').Config} */
-module.exports = prettier;
+export default { ...prettier };
 ```
 
 With plugins `.prettierrc.js`
 
 ```javascript
-const { prettier } = require('@parabit/prettier');
+import { prettier } from '@parabit/prettier';
 
-/** @type {import('prettier').Config} */
-module.exports = {
+export default {
 	...prettier,
 	plugins: ['prettier-plugin-tailwindcss', '@ianvs/prettier-plugin-sort-imports'],
 	importOrder: [
