@@ -8,11 +8,11 @@
   ],
   "author": "Parabit Internet Agency (https://github.com/parabit)",
   "bugs": {
-    "url": "https://github.com/parabit/megatizerui/issues"
+    "url": "https://github.com/parabit/prettier/issues"
   },
-  "homepage": "https://github.com/parabit/megatizerui",
+  "homepage": "https://github.com/parabit/prettier",
   "repository": {
-    "url": "git+https://github.com/parabit/megatizerui.git"
+    "url": "git+https://github.com/parabit/prettier.git"
   },
   "publishConfig": {
     "access": "public"
