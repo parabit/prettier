@@ -38,6 +38,8 @@ yarn add @parabit/prettier
 
 # Usage
 
+Alse see [prettier docs](https://prettier.io/docs/configuration).
+
 Without plugins `.prettierrc.js`
 
 ```javascript
