@@ -1,35 +1,33 @@
 {
-  "name": "@parabit/prettier",
-  "description": "prettier config",
-  "license": "MIT",
-  "version": "0.0.1",
-  "keywords": [
-    "prettier"
-  ],
-  "author": "Parabit Internet Agency (https://github.com/parabit)",
-  "bugs": {
-    "url": "https://github.com/parabit/prettier/issues"
-  },
-  "homepage": "https://github.com/parabit/prettier",
-  "repository": {
-    "url": "git+https://github.com/parabit/prettier.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    ".prettierrc.js"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "format": "prettier --write \"*.js\""
-  },
-  "lint-staged": {
-    "*.js": "prettier --write"
-  },
-  "peerDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "prettier": "^3.5.0",
-    "prettier-plugin-tailwindcss": "^0.6.11"
-  }
+	"name": "@parabit/prettier",
+	"description": "prettier config",
+	"license": "MIT",
+	"version": "0.0.2",
+	"keywords": [
+		"prettier"
+	],
+	"author": "Parabit Internet Agency (https://github.com/parabit)",
+	"bugs": {
+		"url": "https://github.com/parabit/prettier/issues"
+	},
+	"homepage": "https://github.com/parabit/prettier",
+	"repository": {
+		"url": "git+https://github.com/parabit/prettier.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"files": [
+		".prettierrc.js"
+	],
+	"main": "index.js",
+	"scripts": {
+		"format": "prettier --write \"*.js\""
+	},
+	"lint-staged": {
+		"*.js": "prettier --write"
+	},
+	"peerDependencies": {
+		"prettier": "^3.5.0"
+	}
 }
